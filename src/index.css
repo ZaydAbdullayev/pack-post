@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Freckle Face", cursive;
+}
+
+:root {
+  line-height: 1.5;
+  color-scheme: light dark;
+  background-color: #f0f0f0;
+  letter-spacing: 0.05rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Freckle Face", cursive;
+  background: linear-gradient(#9cd0e3, #aedff7);
+  color: #2b1e36;
+}
+
+input {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.loader {
+  margin-bottom: -4px;
+  margin-left: 10px;
+  font-size: 20px;
+  animation: loading 1s linear infinite;
+}

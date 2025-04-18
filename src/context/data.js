@@ -1,45 +1,24 @@
-import item1 from '../assets/_1.png';
-import item2 from '../assets/_2.png';
-import item3 from '../assets/_3.png';
-import item4 from '../assets/_4.png';
-import item5 from '../assets/_5.png';
-import item6 from '../assets/_6.png';
-import item7 from '../assets/_7.png';
-import item8 from '../assets/_8.png';
-import item9 from '../assets/_9.png';
-import item10 from '../assets/_10.png';
-import item11 from '../assets/_11.png';
-import item12 from '../assets/_12.png';
-import item13 from '../assets/_13.png';
-import item14 from '../assets/_14.png';
-import item15 from '../assets/_15.png';
-import item16 from '../assets/_16.png';
-import item19 from '../assets/trol_face.png';
-import item20 from '../assets/trol_face1.png';
-import item21 from '../assets/troll_face2.png';
-import item22 from '../assets/child_compressed.png';
-
 export const items = [
-    { id: 0.2, name: 'Loking analysis', image: item22 },
-    { id: 1, name: 'Laptop', image: item1 },
-    { id: 2, name: 'Trader accessories', image: item2 },
-    { id: 4, name: 'Diamond hands', image: item4 },
-    { id: 5, name: 'Hodl', image: item5 },
-    { id: 6, name: 'Degen', image: item6 },
-    { id: 13, name: 'Bull market', image: item13 },
-    { id: 7, name: 'Moon', image: item7 },
-    { id: 8, name: 'To the moon!', image: item8 },
-    { id: 9, name: 'Buy the dip!', image: item9 },
-    { id: 3, name: 'Buy the Dip', image: item3 },
-    { id: 10, name: 'Lambo', image: item10 },
-    { id: 11, name: 'Stonks', image: item11 },
-    { id: 20, name: 'Trol face', image: item20 },
-    { id: 12, name: 'Bear market', image: item12 },
-    { id: 14, name: 'FOMO', image: item14 },
-    { id: 15, name: 'FUD', image: item15 },
-    { id: 16, name: 'HODL', image: item16 },
-    { id: 19, name: 'Trol face', image: item19 },
-    { id: 21, name: 'Trol face', image: item21 },
+    { id: 1, image: "https://i.ibb.co/kRz3KGn/1.png" },
+    { id: 2, image: "https://i.ibb.co/H1MFpjk/2.webp" },
+    { id: 3, image: "https://i.ibb.co/Y7t0GDk5/3.jpg" },
+    { id: 4, image: "https://i.ibb.co/qL4rYNNj/4.png" },
+    { id: 5, image: "https://i.ibb.co/jk20FswB/5.png" },
+    { id: 17, image: "https://i.ibb.co/bMxWwNrX/trol-face1.png" },
+    { id: 6, image: "https://i.ibb.co/9kkGh1LB/6.png" },
+    { id: 16, image: "https://i.ibb.co/1GWNF313/trol-face.png" },
+    { id: 7, image: "https://i.ibb.co/dJJ8NXS6/7.jpg" },
+    { id: 8, image: "https://i.ibb.co/5gnswDf3/8.png" },
+    { id: 9, image: "https://i.ibb.co/7JfSYSDQ/9.png" },
+    { id: 10, image: "https://i.ibb.co/TxLJKCYF/10.png" },
+    { id: 11, image: "https://i.ibb.co/8LgMXwYs/11.png" },
+    { id: 12, image: "https://i.ibb.co/4RzLWHxD/12.jpg" },
+    { id: 13, image: "https://i.ibb.co/G468zLJZ/13.png" },
+    { id: 14, image: "https://i.ibb.co/XrJdn9h5/16.png" },
+    { id: 15, image: "https://i.ibb.co/S7DJxtP1/child-compressed.png" },
+    { id: 18, image: "https://i.ibb.co/6cSkb2Xz/troll-face2.png" },
+    { id: 19, image: "https://i.ibb.co/tjyKZ1B/ip.jpg" },
+    { id: 20, image: "https://i.ibb.co/dwbm7Wdk/pngimg-com-red-bull-PNG27.png" },
 ];
 
 export const positionPresets = [

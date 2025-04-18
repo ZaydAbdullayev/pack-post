@@ -42,7 +42,7 @@
   position: relative;
   width: 35%;
   height: calc(50dvh + 70px);
-  background: #f782af;
+  background: #ffa8ca;
   padding: 0 1.5rem 1.5rem;
   border-radius: 16px;
   border: 3px solid #7d3454;
@@ -67,7 +67,7 @@
   position: sticky;
   top: 0;
   padding-top: 1.5rem;
-  background: #f782af;
+  background: #ffa8ca;
   font-size: 1.6rem;
   margin-bottom: 1rem;
   color: #6d123c;
@@ -87,10 +87,10 @@
 .grid-item {
   break-inside: avoid;
   margin-bottom: 1rem;
-  background: #f891b8;
+  background: #fff;
   border-radius: 30px;
-  box-shadow: inset -2px -2px 0 #fff, 2px 2px 0 #0002;
   border: 1px solid #3333;
+  box-shadow: inset -4px -4px 0 #fff, 4px 4px 0 #0002;
   cursor: pointer;
   font-weight: bold;
   color: #2a2a2a;
@@ -111,8 +111,7 @@
 }
 
 .grid-item p {
-  color: #fff;
-  text-shadow: 0 0 3px #000;
+  text-shadow: 0 0 3px #fff, 0 0 5px #0002;
   background-color: transparent;
   font-size: 1rem;
   text-align: center;
@@ -131,7 +130,7 @@
 
 .poster {
   position: relative;
-  background: #fdf9ef;
+  background: #fff;
   border: 3px dashed #665c52;
   border-radius: 14px;
   width: 100%;

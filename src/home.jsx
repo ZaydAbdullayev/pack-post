@@ -270,7 +270,6 @@ $RIP
           </div>
         </div>
       </div>
-      <div className="kid-illustration"></div>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <input
           type="text"

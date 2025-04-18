@@ -118,12 +118,10 @@ export const App = () => {
     setSending(true);
     const cardEl = document.querySelector(".poster");
     const imgUrl = await uploadToImgbb(await getPackAsImageData(cardEl));
-    console.log(imgUrl);
-
     const tweetText = `
-Rest in peace, my friend
+My Degen Pack 
 
-$RIP
+$MDP
 `;
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       tweetText

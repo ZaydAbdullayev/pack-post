@@ -9,6 +9,7 @@ import {
   uploadToImgbb,
 } from "./context/fetch.service";
 import { BiLoaderCircle } from "react-icons/bi";
+import { BsTwitterX } from "react-icons/bs";
 
 const titles = ["Add Username", "Add Watermark"];
 
@@ -121,7 +122,7 @@ export const App = () => {
     const tweetText = `
 My Degen Pack 
 
-$MDP
+$DSP
 `;
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       tweetText
@@ -286,6 +287,14 @@ $MDP
                   onClick={() => setConfirmPack(true)}
                 >
                   Confirm Pack
+                </button>
+                <button
+                  className="btn post"
+                  onClick={() =>
+                    window.open("https://x.com/degenpack_sol", "_blank")
+                  }
+                >
+                  <BsTwitterX />
                 </button>
               </>
             )}

@@ -24,6 +24,7 @@ export const App = () => {
   const [watermarkPosition, setWatermarkPosition] = useState(null);
   const [confirmPack, setConfirmPack] = useState(false);
   const [sending, setSending] = useState(false);
+  const [itemsPack, setItemsPack] = useState(items);
 
   const dragItemRef = useRef(null);
   const offsetRef = useRef({ x: 0, y: 0 });
@@ -146,9 +147,33 @@ $RIP
       <p className="subtitle">Create your own starter pack!</p>
       <div className="container">
         <div className="sidebar">
-          <h2 className="sidebar-title">ITEMS</h2>
+          <h2 className="sidebar-title">
+            <span>ITEMS</span>
+            <label>
+              <small>+ Add New</small>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => {
+                  const file = e.target.files[0];
+                  if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                      const newItem = {
+                        id: itemsPack.length + 1,
+                        name: file.name,
+                        image: event.target.result,
+                      };
+                      setItemsPack((prev) => [newItem, ...prev]);
+                    };
+                    reader.readAsDataURL(file);
+                  }
+                }}
+              />
+            </label>
+          </h2>
           <div className="grid-items-container">
-            {items.map((item) => (
+            {itemsPack.map((item) => (
               <div
                 className="grid-item"
                 key={item.id}
@@ -156,7 +181,6 @@ $RIP
                 onDragStart={(e) => handleDragStart(e, item)}
               >
                 <img src={item.image} alt={item.name} />
-                <p>{item.name}</p>
               </div>
             ))}
           </div>
